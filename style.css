@@ -801,3 +801,40 @@ span{
     gap: 1rem;
   }
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .x-footer h1 {
+    font-size: 2.5rem;
+  }
+
+  .Ufooter {
+    font-size: 1rem;
+  }
+
+  .x-footer .social-icons a {
+    font-size: 2.5rem;
+  }
+
+  .x-footer p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .x-footer h1 {
+    font-size: 2rem;
+  }
+
+  .x-footer .social-icons {
+    gap: 1rem;
+  }
+
+  .x-footer .social-icons a {
+    font-size: 2rem;
+  }
+
+  .x-footer p {
+    font-size: 0.9rem;
+  }
+}
