@@ -600,6 +600,11 @@ span{
       gap: 1rem; /* Medium screens (md:gap-4 equivalent) */
     }
   }
+  @media (max-width: 767px) {
+    .custom-container {
+      gap: 1rem; /* Medium screens (md:gap-4 equivalent) */
+    }
+  }
   
   @media (min-width: 1024px) {
     .custom-container {
@@ -754,4 +759,45 @@ span{
     .contact form .input-box input{
         width: 100%;
     }
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+  .custom-container {
+    gap: 1.2rem;
+    padding: 1.5rem;
+  }
+
+  .card-container {
+    width: 120px;
+    padding: 0.75rem;
+  }
+
+  .card-container h1 {
+    font-size: 0.9rem;
+  }
+
+  .skill h1 {
+    font-size: 2rem;
+  }
+
+  .skill h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card-container {
+    width: 100px;
+    padding: 0.5rem;
+  }
+
+  .card-container h1 {
+    font-size: 0.8rem;
+  }
+
+  .custom-container {
+    gap: 1rem;
+  }
 }
