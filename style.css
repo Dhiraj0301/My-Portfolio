@@ -428,8 +428,9 @@ span{
     display: flex;
     /* flex-wrap: nowrap; */
     padding-top: 20px ;
-    gap: 25px;
+    gap: 20px;
     /* border-radius: 10px; */
+    height:fit-content;
 }
  .eduinfo{
     border: 5px solid var(--snd-bg-color);
@@ -480,6 +481,90 @@ span{
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
  }
+ /* Responsive Design */
+@media (min-width: 768px) {
+  .edu {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .eduinfo {
+    flex-direction: row;
+    height: 260px;
+  }
+
+  .edu-img {
+    width: 40%;
+  }
+
+  .edu-text {
+    width: 60%;
+    padding: 30px;
+  }
+
+  .edu-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .edu-text .duration {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .edu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .eduinfo {
+    flex-direction: row;
+    /* height: 260px; */
+    max-width: 45%;
+  }
+
+  .edu-img {
+    width: 40%;
+  }
+
+  .edu-text {
+    width: 60%;
+    padding: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .edu {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .eduinfo {
+    flex-direction: row;
+    height: 260px;
+  }
+
+  .edu-img {
+    width: 40%;
+  }
+
+  .edu-text {
+    width: 60%;
+    padding: 30px;
+  }
+
+  .edu-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .edu-text .duration {
+    font-size: 1.6rem;
+  }
+}
+
+/* Optional: Add spacing below for better scrolling space */
+.education {
+  padding-bottom: 60px;
+}
 /* skills section */
  .zoom-out { 
     opacity: 0;
