@@ -600,19 +600,7 @@ span{
       gap: 1rem; /* Medium screens (md:gap-4 equivalent) */
     }
   }
-  @media (max-width: 767px) {
-    .custom-container {
-      gap: 1rem; /* Medium screens (md:gap-4 equivalent) */
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    .custom-container {
-      gap: 1rem; /* Large screens (lg:gap-4 equivalent) */
-      padding-left: 1.5rem; /* Left padding (lg:px-6 equivalent) */
-      padding-right: 1.5rem; /* Right padding */
-    }
-  }
+  /*  */
   
   .dark .custom-container {
     border-color: #4b5563; /* Dark border color (dark:border-gray-600 equivalent) */
@@ -786,21 +774,25 @@ span{
     font-size: 1.25rem;
   }
 }
-
 @media screen and (max-width: 480px) {
+  .custom-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
   .card-container {
-    width: 100px;
+    width: calc(50% - 1rem); /* 2 cards per row with gap */
     padding: 0.5rem;
+    box-sizing: border-box;
   }
 
   .card-container h1 {
     font-size: 0.8rem;
   }
-
-  .custom-container {
-    gap: 1rem;
-  }
 }
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -836,5 +828,33 @@ span{
 
   .x-footer p {
     font-size: 0.9rem;
+  }
+}
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  form {
+    width: 65%;
+  }
+
+  .contact-info {
+    width: 30%;
+  }
+
+  .input-box {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .input-box input {
+    width: 100%;
+  }
+
+  textarea {
+    margin-right: 0;
   }
 }
